@@ -43,11 +43,14 @@ namespace CarLotSimulator
             lot.CarList.Add(Camery);
 
             //constructor
-            Car Junk = new Car { Year = 1980, Make = "Junk", Model = "Black", EnginNoise = "nothing", HonkNoise = "loud" };
-            Junk.MakeEnginNoise(Junk.EnginNoise);
-            Junk.MakeHonkNoise(Junk.HonkNoise);
+            Car Ford= new Car { Year = 1980, Make = "F150", Model = "Black", EnginNoise = "nothing", HonkNoise = "loud" };
+            Ford.MakeEnginNoise(Ford.EnginNoise);
+            Ford.MakeHonkNoise(Ford.HonkNoise);
 
-            Console.WriteLine("---------------");
+            lot.CarList.Add(Ford);
+
+
+            Console.WriteLine("------------------------------");
 
             //*************BONUS*************//
 
@@ -55,6 +58,8 @@ namespace CarLotSimulator
 
             //*************BONUS X 2*************//
 
+
+            Console.WriteLine($"Number of Cars:{Carlot.NumberOfCars}");
             foreach (var car in lot.CarList)
             {
                 Console.WriteLine();

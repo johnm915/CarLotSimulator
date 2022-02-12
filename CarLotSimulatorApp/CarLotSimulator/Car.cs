@@ -8,7 +8,7 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            Carlot.NumberOfCars++;
         }
 
         public int Year { get; set; }
@@ -24,11 +24,11 @@ namespace CarLotSimulator
         
         public Car(int year, string make, string model, string enginNoise, string honkNoise, bool isDriveAble = false)
         {
-            Year = year;
-            Make = make;
-            Model = model;
-            EnginNoise = enginNoise;
-            HonkNoise = honkNoise;
+         Year = year;
+         Make = make;
+         Model = model;
+         EnginNoise = enginNoise;
+         HonkNoise = honkNoise;
 
         }
         
